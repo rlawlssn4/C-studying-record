@@ -1,4 +1,14 @@
-ï»¿1>------ ë¹Œë“œ ì‹œì‘: í”„ë¡œì íŠ¸: Project1, êµ¬ì„±: Debug Win32 ------
-1>source.c
-1>Project1.vcxproj -> C:\Users\owner\Desktop\Cì–¸ì–´\Debug\Project1.exe
-========== ë¹Œë“œ: ì„±ê³µ 1, ì‹¤íŒ¨ 0, ìµœì‹  0, ìƒëµ 0 ==========
+#include <stdio.h>
+
+int main(void)
+{
+	int income = 0;					// ¼Òµæ¾× ÃÊ±âÈ­
+	double tax;						// ¼¼±İ
+	const double tax_rate = 0.12;	// ¼¼À² ÃÊ±âÈ­
+
+	income = 456;
+	tax = income * tax_rate;
+	printf("¼¼±İÀº : %.1lfÀÔ´Ï´Ù.\n", tax);
+
+	return 0;
+}
